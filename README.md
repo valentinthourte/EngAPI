@@ -4,14 +4,19 @@ README Application to interact with a WEB API, which can store users in real tim
 
 To get the application up and running, you must:
 
-Clone the github repository to your local machine
-In SQL Server Management Studio, you must execute the CreateDatabaseScript\CreateDatabase.sql script found in the "repository" project in order to create and initialize the database
-Navigate to appsettings.json and modify the DefaultConnection key for a valid connection string to the created database (named EngAPI)
-Build and execute the solution using Microsoft Visual Studio
-Once the application is running, use the generated API URL for sending requests through Postman
+• Clone the github repository to your local machine
+
+• In SQL Server Management Studio, you must execute the CreateDatabaseScript\CreateDatabase.sql script found in the "repository" project in order to create and initialize the database
+
+• Navigate to appsettings.json and modify the DefaultConnection key for a valid connection string to the created database (named EngAPI)
+
+• Build and execute the solution using Microsoft Visual Studio
+
+• Once the application is running, use the generated API URL for sending requests through Postman
 
 USERS: 
-The URL for accessing the API will be constructed by the port your local machine forwards in order to run the application (eg: https://localhost:50000) followed by the controller name. For the user management, the controller name is "Users". An example URL would look like this: "https://localhost:50000/api/Users". For endpoints with query parameters, they must be added after the controller name
+The URL for accessing the API will be constructed by the port your local machine forwards in order to run the application (eg: https://localhost:50000) followed by the controller name. For the user management, the controller name is "Users". An example URL would look like this: "https://localhost:50000/api/Users". For endpoints with query parameters, they must be added after the controller name.
+
 GET: Returns all users. Also has an endpoint for users by ID (Guid). Simply add the ID as param in URL 
 (eg: https://localhost:50000/api/Users/eae98cad-9c30-4e80-a1de-7c2af9958b8f)
 
