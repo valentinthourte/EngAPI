@@ -2,8 +2,9 @@ IF NOT EXISTS(SELECT * FROM sys.databases WHERE name = 'EngAPI')
 BEGIN
 	CREATE DATABASE EngAPI
 END
+GO
 
-use [dbo.EngAPI]
+use [EngAPI]
 
 IF object_id('Users', 'U') is null
 BEGIN
