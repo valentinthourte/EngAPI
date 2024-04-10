@@ -8,7 +8,7 @@ To get the application up and running, you must:
 
 • In SQL Server Management Studio, you must execute the CreateDatabaseScript\CreateDatabase.sql script found in the "repository" project in order to create and initialize the database
 
-• Navigate to appsettings.json and modify the DefaultConnection key for a valid connection string to the created database (named EngAPI)
+• Navigate to appsettings.json(eng.api project) and modify the DefaultConnection key for a valid connection string to the created database (named EngAPI)
 
 • Build and execute the solution using Microsoft Visual Studio
 
