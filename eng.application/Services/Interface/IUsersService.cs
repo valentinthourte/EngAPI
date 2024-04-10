@@ -11,6 +11,7 @@ namespace eng.application.Services.Interface
     {
         Task<bool> CreateUser(User user);
         Task<bool> DeleteById(Guid userId);
+        Task<User> GetUserById(Guid userId);
         Task<IEnumerable<User>> GetUsers();
         Task<User> UpdateUserStatus(Guid id, bool newStatus);
     }

@@ -34,6 +34,20 @@ namespace eng.api.Controllers
             }
         }
 
+        [HttpGet("{userId}")]
+        public async Task<IActionResult> GetUserById(Guid userId)
+        {
+            try
+            {
+                return Ok(await UsersService.GetUserById(userId));
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         [HttpPost]
         public async Task<IActionResult> CreateUser([FromBody] UserDTO userDto)
         {
@@ -43,7 +57,7 @@ namespace eng.api.Controllers
                 bool result = await UsersService.CreateUser(user);
                 return Ok(result);
             }
-                        catch (Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }

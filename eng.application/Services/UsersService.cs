@@ -30,6 +30,11 @@ namespace eng.application.Services
             return true;
         }
 
+        public async Task<User> GetUserById(Guid userId)
+        {
+            return await UsersRepository.GetById(userId);
+        }
+
         public async Task<IEnumerable<User>> GetUsers()
         {
             return await UsersRepository.GetUsers();

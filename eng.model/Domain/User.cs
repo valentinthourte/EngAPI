@@ -13,5 +13,15 @@ namespace eng.application.Model
         public virtual string Name { get; set; }
         public virtual DateTime Birthdate { get; set; }
         public virtual bool Active { get; set; }
+
+        public User() { }
+        public User(Guid id, string name, DateTime birth, bool active = true) 
+        {
+            this.Id = id;
+            this.Name = name;
+            this.Birthdate = birth;
+            this.Active = active;
+        }
+
     }
 }
