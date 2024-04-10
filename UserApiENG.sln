@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eng.repository", "eng.repos
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eng.model", "eng.model\eng.model.csproj", "{8612CB9B-20E0-4148-A778-A404A70BBA55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eng.tests", "Tests\eng.tests.csproj", "{0EDBA2B9-9E39-4CAF-84F8-92D4F50B4B87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eng.tests", "eng.tests\eng.tests.csproj", "{0EDBA2B9-9E39-4CAF-84F8-92D4F50B4B87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
